@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Outfit:wght@300;400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #8b5cf6;
+  --color-accent: #ff49db;
+  --color-cyber: #00f0ff;
+}
+
+body {
+  background-color: #030206;
+}

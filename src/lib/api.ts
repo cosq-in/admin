@@ -84,3 +84,24 @@ export const createManualPost = (data: ManualPostCreate) =>
     method: "POST",
     body: JSON.stringify(data),
   });
+
+// ── Account Deletion Requests ─────────────────────────────────────────────────
+
+export interface DeletionRequest {
+  id: string;
+  user_id: string;
+  username: string;
+  reason: string;
+  data_only: boolean;
+  status: string;
+  requested_at: string;
+}
+
+export const listDeletionRequests = () =>
+  apiFetch<DeletionRequest[]>("/admin/deletion-requests");
+
+export const reviewDeletionRequest = (id: string, approve: boolean) =>
+  apiFetch<DeletionRequest>(`/admin/deletion-requests/${id}`, {
+    method: "PATCH",
+    body: JSON.stringify({ approve }),
+  });

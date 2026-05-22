@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <a href="/quests" className="text-goth-dim hover:text-goth-text text-sm">Quests</a>
           <a href="/events" className="text-goth-dim hover:text-goth-text text-sm">Events</a>
           <a href="/posts" className="text-goth-dim hover:text-goth-text text-sm">Posts</a>
+          <a href="/deletions" className="text-orange-400 hover:text-orange-300 text-sm font-semibold">Deletions</a>
         </nav>
         <main className="p-6">{children}</main>
       </body>

@@ -11,6 +11,7 @@ export default function DashboardPage() {
           { href: "/quests", label: "Quests & XP", desc: "Configure daily quests and achievement badges" },
           { href: "/events", label: "Events", desc: "Toggle the 3 AM spooky event and other time-limited features" },
           { href: "/posts", label: "Posts & Simulator", desc: "Browse bot posts, select them, and simulate bot comment threads with Groq" },
+          { href: "/deletions", label: "Deletion Requests", desc: "Review and approve or reject user account deletion requests" },
         ].map((card) => (
           <a
             key={card.href}
